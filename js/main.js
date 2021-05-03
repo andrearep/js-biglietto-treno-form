@@ -32,6 +32,7 @@ function randomCod(n) {
     }
     return array.join("");
 }
+
 /**
  * ritorna il prezzo del biglietto, la carrozza, il codice cp di 5 cifre e il tipo di sconto da applicare
  * @returns 
@@ -47,21 +48,21 @@ function generateTicketPrice() {
     } else {
         km = kmVerifica()
     }
-    console.log(age, name, km);
-    if (age == "intero") {
-        document.getElementById("offerta").innerHTML = "nessuno";
-    } else {
-        document.getElementById("offerta").innerHTML = age;
-    }
+
+    //calcolo prezzo
     var price = km * 0.21;
 
+    //calcolo del prezzo scontato dove applivabile
     if (age == "ridotto") {
         price *= 0.8;
+        document.getElementById("offerta").innerHTML = age;
     }
     else if (age == "over") {
         price *= 0.6;
+        document.getElementById("offerta").innerHTML = age;
     }
-    //stampa prezzo
+
+    //stampa valori
     console.log(price);
     document.getElementById("pass_name").innerHTML = name;
     document.getElementById("carrozza").innerHTML = carrozza;
@@ -69,6 +70,8 @@ function generateTicketPrice() {
     document.getElementById("price").innerHTML = price.toFixed(2) + " €";
 
 }
+
+
 /**
  * annulla tutti gli inserimenti fatti e i risultati
  */
