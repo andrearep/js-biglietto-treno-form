@@ -33,3 +33,22 @@ input, select{
 .purple_border{
     border: 2px solid #A367A4;
 }
+
+
+.ticket_box{
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    height: 200px;
+}
+.pass_name{
+    background-color: #808080;
+    padding-right:100px;
+    
+}
+.ticket_span{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.ticket_row  div[class*="col-"]{
+    height: 200px;
+}
