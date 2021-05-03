@@ -1,4 +1,7 @@
-
+/**
+ * ritorna falso se i km inseriti non sono validi mentre ritorna i km inseriti nel caso rispettino i parametri
+ * @returns {boolean}
+ */
 function kmVerifica() {
     var km = document.getElementById("km").value;
 
@@ -9,10 +12,19 @@ function kmVerifica() {
     return km;
 }
 
+/**
+ * crea un numero casuale tra 0 e 9
+ * @returns {number}
+ */
 function randomNum() {
     return Math.floor(Math.random() * 9)
 }
 
+/**
+ * inserendo un numero n crea un numero casuale di n cifre
+ * @param {number} n 
+ * @returns {string}
+ */
 function randomCod(n) {
     var array = []
     for (var i = 0; i < n; i++) {
@@ -20,7 +32,10 @@ function randomCod(n) {
     }
     return array.join("");
 }
-
+/**
+ * ritorna il prezzo del biglietto, la carrozza, il codice cp di 5 cifre e il tipo di sconto da applicare
+ * @returns 
+ */
 function generateTicketPrice() {
     var name = document.getElementById("name").value;
     var age = document.getElementById("age").value;
@@ -54,7 +69,9 @@ function generateTicketPrice() {
     document.getElementById("price").innerHTML = price.toFixed(2) + " €";
 
 }
-
+/**
+ * annulla tutti gli inserimenti fatti e i risultati
+ */
 function annulla() {
     document.getElementById("km").value = ""
     document.getElementById("name").value = "";
