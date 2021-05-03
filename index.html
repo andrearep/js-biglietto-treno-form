@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="text-white text-center m-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="form_box container bg-white">
+            <div class="m-5 text-center">
+                <form class="d-flex justify-content-around" action="">
+                    <!-- nome e cognome -->
+                    <div class="">
+                        <label for=" name">Nome Cognome</label><br>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <!-- km da percorrere -->
+                    <div class="">
+                        <label for="km">Km da percorrere</label><br>
+                        <input type="text" id="km" name="km">
+                    </div>
+                    <!-- Fascia d'età -->
+                    <div class="">
+                        <label for="age">Fascia d'età</label><br>
+                        <select id="age" name="age">
+                            <option value="volvo">minorenne</option>
+                            <option value="saab">19 - 64</option>
+                            <option value="fiat">over 65</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="buttons d-flex justify-content-center m-5">
+                    <button class="btn purple_border">Genera</button>
+                    <button class="btn">Annulla</button>
+                </div>
+            </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
